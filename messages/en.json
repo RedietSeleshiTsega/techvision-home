@@ -1,0 +1,134 @@
+{
+  "nav": { "home": "Home", "about": "About", "contact": "Contact", "links": {
+      "home": "Home",
+      "solutions": "Solutions",
+      "pricing": "Pricing",
+      "industries": "Industries",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "signIn": "Sign in",
+    "requestDemo": "Request Demo",
+    "toggleMenu": "Toggle menu"
+  },
+  "hero": {
+    "badge": "One platform for learning, operations, and people",
+    "titlePrefix": "Transform your organization with",
+    "titleHighlight": "smart digital solutions",
+    "subtitle": "LMS, Education ERP, ERP, and HR Management — one cloud platform to run your school, university, or business smarter. Built for scale, backed by local Ethiopian support.",
+    "ctaPrimary": "Request Demo",
+    "ctaSecondary": "Explore Solutions",
+    "checklist": ["No credit card required", "14-day free trial", "Local support"],
+    "dashboardAlt": "TechVision Education ERP dashboard showing admissions, fees, and exam analytics",
+    "hrDashboardAlt": "HR management dashboard preview",
+    "lmsDashboardAlt": "LMS dashboard preview",
+    "trustedByLabel": "Trusted by schools, universities, and businesses",
+    "trustedBy": ["Universities", "Schools", "NGOs", "Government", "Telecom", "Enterprises"]
+  },
+  "stats": {
+    "items": [
+      { "value": "500+", "label": "Organizations served" },
+      { "value": "1M+", "label": "Active learners & users" },
+      { "value": "99.9%", "label": "Platform uptime" },
+      { "value": "24/7", "label": "Local support" }
+    ]
+  },
+  "solutions": {
+  "eyebrow": "Solutions",
+  "heading": "One platform, four powerful products",
+  "subheading": "Buy each product individually or bundle them into a suite. Everything is cloud-based, secure, and built to work together.",
+  "priceLine": "From ${price}/mo",
+  "products": {
+    "lms": { "name": "Learning Management System", "short": "LMS", "tagline": "Deliver world-class digital learning" },
+    "education-erp": { "name": "Education ERP", "short": "Education ERP", "tagline": "Run your entire institution from one place" },
+    "erp": { "name": "ERP System", "short": "ERP", "tagline": "One system to run your whole business" },
+    "hr": { "name": "HR Management System", "short": "HR Management", "tagline": "Empower your people operations" }
+  }
+},
+"why": {
+  "eyebrow": "Why TechVision",
+  "heading": "Built to be reliable, secure, and scalable",
+  "items": {
+    "cloudBased": { "title": "Cloud-Based", "description": "Access everything securely from anywhere, on any device, with zero infrastructure to manage." },
+    "secure": { "title": "Secure", "description": "Bank-grade encryption, role-based access, and regular audits keep your data protected." },
+    "scalable": { "title": "Scalable", "description": "From a single classroom to a national enterprise, TechVision grows with you." },
+    "mobileFriendly": { "title": "Mobile Friendly", "description": "Fully responsive apps so your team and learners stay productive on the go." },
+    "easyIntegration": { "title": "Easy Integration", "description": "Connect with the tools you already use through open APIs and ready integrations." },
+    "localSupport": { "title": "Local Ethiopian Support", "description": "Dedicated onboarding and support from a team that understands your context." }
+  }
+},
+"pricing": {
+  "eyebrow": "Pricing",
+  "heading": "Simple, transparent pricing",
+  "subheading": "Buy a single product or save with a bundled suite. Every plan is cloud-based and includes local support.",
+  "monthly": "Monthly",
+  "annual": "Annual",
+  "toggleAnnual": "Toggle annual pricing",
+  "saveUpTo": "Save up to 20%",
+  "mostPopular": "Most Popular",
+  "perMonth": "/mo",
+  "customPlan": "Need a custom plan?",
+  "talkToTeam": "Talk to our team",
+  "plans": {
+    "starter": {
+      "name": "Starter", "description": "For small teams getting started", "cta": "Start free trial",
+      "features": ["1 product module", "Up to 100 users", "Cloud hosting", "Email support", "Mobile access"]
+    },
+    "growth": {
+      "name": "Growth", "description": "For growing organizations", "cta": "Start free trial",
+      "features": ["Up to 2 product modules", "Up to 250 users", "Advanced analytics", "Priority support", "API access", "Custom branding"]
+    },
+    "educationSuite": {
+      "name": "Education Suite", "description": "LMS + Education ERP bundle", "cta": "Talk to sales",
+      "features": ["LMS + Education ERP", "Unlimited students", "Parent–teacher portal", "Exam & fee management", "Dedicated onboarding", "Local Ethiopian support"]
+    },
+    "enterpriseSuite": {
+      "name": "Enterprise Suite", "description": "All products, fully managed", "cta": "Talk to sales",
+      "features": ["All four products", "Unlimited users", "Custom integrations", "SLA & security audit", "24/7 dedicated support", "On-premise option"]
+    }
+  }
+},
+"industries": {
+  "eyebrow": "Industries",
+  "heading": "Made for the way you work",
+  "viewAll": "View all industries",
+  "yourSector": "Your sector?",
+  "contactAboutIndustry": "Contact us about your industry",
+  "items": {
+    "schools": { "name": "Schools", "description": "Digitize K–12 administration and classroom learning." },
+    "universities": { "name": "Universities", "description": "Manage faculties, campuses, and research at scale." },
+    "trainingCenters": { "name": "Training Centers", "description": "Run cohorts, certifications, and paid courses." },
+    "ngos": { "name": "NGOs", "description": "Track programs, beneficiaries, and impact reporting." },
+    "government": { "name": "Government", "description": "Secure, compliant systems for public institutions." },
+    "telecom": { "name": "Telecom", "description": "Manage workforce and operations across regions." },
+    "businesses": { "name": "Businesses", "description": "Unify finance, people, and operations in one place." }
+  }
+},
+"cta": {
+  "heading": "Ready to transform your organization?",
+  "subheading": "Book a personalized demo and see how TechVision can streamline learning, operations, and people management — all in one place.",
+  "ctaPrimary": "Request Demo",
+  "ctaSecondary": "View Pricing"
+},
+"footer": {
+  "tagline": "Smart digital solutions for schools, universities, and businesses across Ethiopia and beyond.",
+  "columns": {
+    "products": "Products",
+    "company": "Company",
+    "resources": "Resources"
+  },
+  "company": {
+    "about": "About",
+    "industries": "Industries",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "resources": {
+    "requestDemo": "Request Demo",
+    "documentation": "Documentation",
+    "support": "Support",
+    "privacy": "Privacy"
+  },
+  "copyright": "© {year} TechVision. All rights reserved."
+}
+}
