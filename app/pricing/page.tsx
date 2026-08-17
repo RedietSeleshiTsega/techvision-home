@@ -18,9 +18,9 @@ export default function PricingPage() {
     <main className="relative min-h-screen overflow-x-hidden">
       <SiteNav />
       <PageHeader
-        eyebrow="Pricing"
-        title="Pricing that scales with your organization"
-        description="Buy individual products or save with a bundled suite. Every plan includes cloud hosting, mobile access, and local Ethiopian support."
+        eyebrowKey="pricingPage.eyebrow"
+        titleKey="pricingPage.title"
+        descriptionKey="pricingPage.description"
       />
       <PricingPlans showHeader={false} />
       <BundlesSection />

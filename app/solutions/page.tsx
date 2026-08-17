@@ -17,9 +17,9 @@ export default function SolutionsPage() {
     <main className="relative min-h-screen overflow-x-hidden">
       <SiteNav />
       <PageHeader
-        eyebrow="Solutions"
-        title="Powerful products for learning, operations, and people"
-        description="Each TechVision product is a complete, cloud-based system on its own — and even more powerful together. Buy what you need, scale when you're ready."
+        eyebrowKey="solutionsPage.eyebrow"
+        titleKey="solutionsPage.title"
+        descriptionKey="solutionsPage.description"
       />
       <ProductSections />
       <BundlesSection />

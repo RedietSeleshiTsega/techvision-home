@@ -85,134 +85,42 @@ export const products: Product[] = [
 ];
 
 export const navLinks = [
-  { name: "Home", href: "/" },
-  { name: "Solutions", href: "/solutions" },
-  { name: "Pricing", href: "/pricing" },
-  { name: "Industries", href: "/industries" },
-  { name: "About", href: "/about" },
-  { name: "Contact", href: "/contact" },
+  { key: "home", href: "/" },
+  { key: "solutions", href: "/solutions" },
+  { key: "pricing", href: "/pricing" },
+  { key: "industries", href: "/industries" },
+  { key: "about", href: "/about" },
+  { key: "contact", href: "/contact" },
 ];
 
 export const whyTechVision = [
-  {
-    title: "Cloud-Based",
-    description: "Access everything securely from anywhere, on any device, with zero infrastructure to manage.",
-  },
-  {
-    title: "Secure",
-    description: "Bank-grade encryption, role-based access, and regular audits keep your data protected.",
-  },
-  {
-    title: "Scalable",
-    description: "From a single classroom to a national enterprise, TechVision grows with you.",
-  },
-  {
-    title: "Mobile Friendly",
-    description: "Fully responsive apps so your team and learners stay productive on the go.",
-  },
-  {
-    title: "Easy Integration",
-    description: "Connect with the tools you already use through open APIs and ready integrations.",
-  },
-  {
-    title: "Local Ethiopian Support",
-    description: "Dedicated onboarding and support from a team that understands your context.",
-  },
+  { key: "cloudBased" },
+  { key: "secure" },
+  { key: "scalable" },
+  { key: "mobileFriendly" },
+  { key: "easyIntegration" },
+  { key: "localSupport" },
 ];
 
 export const industries = [
-  { name: "Schools", description: "Digitize K–12 administration and classroom learning." },
-  { name: "Universities", description: "Manage faculties, campuses, and research at scale." },
-  { name: "Training Centers", description: "Run cohorts, certifications, and paid courses." },
-  { name: "NGOs", description: "Track programs, beneficiaries, and impact reporting." },
-  { name: "Government", description: "Secure, compliant systems for public institutions." },
-  { name: "Telecom", description: "Manage workforce and operations across regions." },
-  { name: "Businesses", description: "Unify finance, people, and operations in one place." },
+  { key: "schools" },
+  { key: "universities" },
+  { key: "trainingCenters" },
+  { key: "ngos" },
+  { key: "government" },
+  { key: "telecom" },
+  { key: "businesses" },
 ];
 
 export const pricingPlans = [
-  {
-    name: "Starter",
-    description: "For small teams getting started",
-    monthly: "10,000",
-    annual: "96,000",
-    features: [
-      "1 product module",
-      "Up to 100 users",
-      "Cloud hosting",
-      "Email support",
-      "Mobile access",
-    ],
-    cta: "Start free trial",
-    popular: false,
-  },
-  {
-    name: "Growth",
-    description: "For growing organizations",
-    monthly: 13000,
-    annual: 124000,
-    features: [
-      "Up to 2 product modules",
-      "Up to 250 users",
-      "Advanced analytics",
-      "Priority support",
-      "API access",
-      "Custom branding",
-    ],
-    cta: "Start free trial",
-    popular: false,
-  },
-  {
-    name: "Education Suite",
-    description: "LMS + Education ERP bundle",
-    monthly: 18000,
-    annual: 172800,
-    features: [
-      "LMS + Education ERP",
-      "Unlimited students",
-      "Parent–teacher portal",
-      "Exam & fee management",
-      "Dedicated onboarding",
-      "Local Ethiopian support",
-    ],
-    cta: "Talk to sales",
-    popular: false,
-  },
-  {
-    name: "Enterprise Suite",
-    description: "All products, fully managed",
-    monthly: 24000,
-    annual: 230400,
-    features: [
-      "All four products",
-      "Unlimited users",
-      "Custom integrations",
-      "SLA & security audit",
-      "24/7 dedicated support",
-      "On-premise option",
-    ],
-    cta: "Talk to sales",
-    popular: true,
-  },
+  { key: "starter", monthly: 10000, annual: 96000, popular: false },
+  { key: "growth", monthly: 13000, annual: 124000, popular: false },
+  { key: "educationSuite", monthly: 18000, annual: 172800, popular: false },
+  { key: "enterpriseSuite", monthly: 24000, annual: 230400, popular: true },
 ];
 
 export const bundles = [
-  {
-    name: "Education Suite",
-    products: ["LMS", "Education ERP"],
-    description: "Everything an institution needs to teach and operate.",
-    save: "Save 25%",
-  },
-  {
-    name: "Business Suite",
-    products: ["ERP", "HR Management"],
-    description: "Run finance, operations, and people from one platform.",
-    save: "Save 25%",
-  },
-  {
-    name: "Enterprise Suite",
-    products: ["LMS", "Education ERP", "ERP", "HR Management"],
-    description: "The complete TechVision platform, fully integrated.",
-    save: "Save 35%",
-  },
+  { key: "educationSuite", productKeys: ["lms", "education-erp"] },
+  { key: "businessSuite", productKeys: ["erp", "hr"] },
+  { key: "enterpriseSuite", productKeys: ["lms", "education-erp", "erp", "hr"] },
 ];

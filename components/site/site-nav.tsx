@@ -3,11 +3,14 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/lib/site-data";
+import { LanguageSwitcher } from "@/components/site/language-switcher";
 
 export function SiteNav() {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -48,13 +51,13 @@ export function SiteNav() {
               const active = pathname === link.href;
               return (
                 <Link
-                  key={link.name}
+                  key={link.key}
                   href={link.href}
                   className={`text-sm transition-colors duration-300 relative group ${
                     active ? "text-foreground" : "text-foreground/70 hover:text-foreground"
                   }`}
                 >
-                  {link.name}
+                  {t(`nav.links.${link.key}`)}
                   <span
                     className={`absolute -bottom-1 left-0 h-px bg-primary transition-all duration-300 ${
                       active ? "w-full" : "w-0 group-hover:w-full"
@@ -66,22 +69,23 @@ export function SiteNav() {
           </div>
 
           <div className="hidden lg:flex items-center gap-3">
+            <LanguageSwitcher />
             <Button asChild variant="ghost" size="sm" className="rounded-full text-foreground/80 hover:text-foreground">
-              <Link href="/contact">Sign in</Link>
+              <Link href="/contact">{t("nav.signIn")}</Link>
             </Button>
             <Button
               asChild
               size="sm"
               className="rounded-full bg-primary text-primary-foreground hover:bg-primary/90 px-5 shadow-sm shadow-primary/30"
             >
-              <Link href="/contact">Request Demo</Link>
+              <Link href="/contact">{t("nav.requestDemo")}</Link>
             </Button>
           </div>
 
           <button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             className="lg:hidden p-2"
-            aria-label="Toggle menu"
+            aria-label={t("nav.toggleMenu")}
           >
             {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -97,7 +101,7 @@ export function SiteNav() {
           <div className="flex-1 flex flex-col justify-center gap-6">
             {navLinks.map((link, i) => (
               <Link
-                key={link.name}
+                key={link.key}
                 href={link.href}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`text-4xl font-display text-foreground transition-all duration-500 ${
@@ -105,19 +109,22 @@ export function SiteNav() {
                 }`}
                 style={{ transitionDelay: isMobileMenuOpen ? `${i * 60}ms` : "0ms" }}
               >
-                {link.name}
+                {t(`nav.links.${link.key}`)}
               </Link>
             ))}
+          </div>
+          <div className="flex items-center justify-center pt-4">
+            <LanguageSwitcher />
           </div>
           <div className="flex gap-4 pt-8 border-t border-border">
             <Button asChild variant="outline" className="flex-1 rounded-full h-14 text-base">
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                Sign in
+                {t("nav.signIn")}
               </Link>
             </Button>
             <Button asChild className="flex-1 bg-primary text-primary-foreground rounded-full h-14 text-base">
               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)}>
-                Request Demo
+                {t("nav.requestDemo")}
               </Link>
             </Button>
           </div>

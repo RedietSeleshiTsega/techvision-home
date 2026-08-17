@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { Check, ArrowRight } from "lucide-react";
 import { pricingPlans } from "@/lib/site-data";
 
 export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
+  const { t } = useTranslation();
   const [isAnnual, setIsAnnual] = useState(true);
 
   return (
@@ -13,25 +15,22 @@ export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
       <div className="max-w-[1320px] mx-auto px-6 lg:px-12">
         {showHeader && (
           <div className="max-w-2xl">
-            <span className="font-mono text-xs tracking-widest text-primary uppercase">Pricing</span>
+            <span className="font-mono text-xs tracking-widest text-primary uppercase">{t("pricing.eyebrow")}</span>
             <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl tracking-tight text-balance">
-              Simple, transparent pricing
+              {t("pricing.heading")}
             </h2>
-            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-              Buy a single product or save with a bundled suite. Every plan is cloud-based and
-              includes local support.
-            </p>
+            <p className="mt-5 text-lg text-muted-foreground leading-relaxed">{t("pricing.subheading")}</p>
           </div>
         )}
 
         <div className="mt-10 flex items-center gap-4">
           <span className={`text-sm ${!isAnnual ? "text-foreground" : "text-muted-foreground"}`}>
-            Monthly
+            {t("pricing.monthly")}
           </span>
           <button
             onClick={() => setIsAnnual(!isAnnual)}
             className="relative w-14 h-7 bg-muted rounded-full p-1 transition-colors hover:bg-accent"
-            aria-label="Toggle annual pricing"
+            aria-label={t("pricing.toggleAnnual")}
           >
             <div
               className={`w-5 h-5 bg-primary rounded-full transition-transform duration-300 ${
@@ -40,11 +39,11 @@ export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
             />
           </button>
           <span className={`text-sm ${isAnnual ? "text-foreground" : "text-muted-foreground"}`}>
-            Annual
+            {t("pricing.annual")}
           </span>
           {isAnnual && (
             <span className="ml-1 rounded-full bg-primary/15 px-2.5 py-1 text-xs font-medium text-foreground">
-              Save up to 20%
+              {t("pricing.saveUpTo")}
             </span>
           )}
         </div>
@@ -52,7 +51,7 @@ export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
         <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           {pricingPlans.map((plan) => (
             <div
-              key={plan.name}
+              key={plan.key}
               className={`relative flex flex-col rounded-2xl border bg-card p-7 ${
                 plan.popular
                   ? "border-primary shadow-xl shadow-primary/15 ring-1 ring-primary"
@@ -61,17 +60,17 @@ export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
             >
               {plan.popular && (
                 <span className="absolute -top-3 left-7 rounded-full bg-primary px-3 py-1 text-xs font-medium text-primary-foreground">
-                  Most Popular
+                  {t("pricing.mostPopular")}
                 </span>
               )}
-              <h3 className="font-display text-2xl tracking-tight">{plan.name}</h3>
-              <p className="mt-1 text-sm text-muted-foreground">{plan.description}</p>
+              <h3 className="font-display text-2xl tracking-tight">{t(`pricing.plans.${plan.key}.name`)}</h3>
+              <p className="mt-1 text-sm text-muted-foreground">{t(`pricing.plans.${plan.key}.description`)}</p>
 
               <div className="mt-5 flex items-baseline gap-1.5">
                 <span className="font-display text-4xl tracking-tight">
-                  ${isAnnual ? plan.annual : plan.monthly}
+                  ${(isAnnual ? plan.annual : plan.monthly).toLocaleString()}
                 </span>
-                <span className="text-muted-foreground text-sm">/mo</span>
+                <span className="text-muted-foreground text-sm">{t("pricing.perMonth")}</span>
               </div>
 
               <Link
@@ -82,12 +81,12 @@ export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
                     : "border border-border text-foreground hover:bg-accent"
                 }`}
               >
-                {plan.cta}
+                {t(`pricing.plans.${plan.key}.cta`)}
                 <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               </Link>
 
               <ul className="mt-7 space-y-3 border-t border-border pt-6">
-                {plan.features.map((feature) => (
+                {(t(`pricing.plans.${plan.key}.features`, { returnObjects: true }) as string[]).map((feature) => (
                   <li key={feature} className="flex items-start gap-2.5">
                     <Check className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                     <span className="text-sm text-muted-foreground">{feature}</span>
@@ -99,9 +98,9 @@ export function PricingPlans({ showHeader = true }: { showHeader?: boolean }) {
         </div>
 
         <p className="mt-10 text-center text-sm text-muted-foreground">
-          Need a custom plan?{" "}
+          {t("pricing.customPlan")}{" "}
           <Link href="/contact" className="text-foreground underline underline-offset-4 hover:text-primary">
-            Talk to our team
+            {t("pricing.talkToTeam")}
           </Link>
         </p>
       </div>

@@ -1,11 +1,11 @@
-const stats = [
-  { value: "500+", label: "Organizations served" },
-  { value: "1M+", label: "Active learners & users" },
-  { value: "99.9%", label: "Platform uptime" },
-  { value: "24/7", label: "Local support" },
-];
+"use client";
+
+import { useTranslation } from "react-i18next";
 
 export function StatsBand() {
+  const { t } = useTranslation();
+  const stats = t("stats.items", { returnObjects: true }) as { value: string; label: string }[];
+
   return (
     <section className="relative py-16 bg-primary text-primary-foreground">
       <div className="max-w-[1320px] mx-auto px-6 lg:px-12">

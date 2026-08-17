@@ -1,21 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 import { ArrowUpRight } from "lucide-react";
 import { products } from "@/lib/site-data";
 
 export function SolutionsGrid() {
+  const { t } = useTranslation();
+
   return (
     <section id="solutions" className="relative py-24 lg:py-32">
       <div className="max-w-[1320px] mx-auto px-6 lg:px-12">
         <div className="max-w-2xl">
-          <span className="font-mono text-xs tracking-widest text-primary uppercase">Solutions</span>
+          <span className="font-mono text-xs tracking-widest text-primary uppercase">{t("solutions.eyebrow")}</span>
           <h2 className="mt-4 font-display text-4xl md:text-5xl lg:text-6xl tracking-tight text-balance">
-            One platform, four powerful products
+            {t("solutions.heading")}
           </h2>
-          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">
-            Buy each product individually or bundle them into a suite. Everything is cloud-based,
-            secure, and built to work together.
-          </p>
+          <p className="mt-5 text-lg text-muted-foreground leading-relaxed">{t("solutions.subheading")}</p>
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-2">
@@ -28,7 +30,7 @@ export function SolutionsGrid() {
               <div className="relative aspect-[16/10] overflow-hidden border-b border-border bg-secondary">
                 <Image
                   src={product.image}
-                  alt={`${product.name} dashboard`}
+                  alt={t(`solutions.products.${product.slug}.name`)}
                   fill
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
                 />
@@ -37,18 +39,21 @@ export function SolutionsGrid() {
                 <div className="flex items-start justify-between gap-4">
                   <div>
                     <span className="inline-flex rounded-full bg-primary/10 px-3 py-1 text-xs font-medium text-foreground">
-                      {product.short}
+                      {t(`solutions.products.${product.slug}.short`)}
                     </span>
-                    <h3 className="mt-3 font-display text-2xl tracking-tight">{product.name}</h3>
+                    <h3 className="mt-3 font-display text-2xl tracking-tight">
+                      {t(`solutions.products.${product.slug}.name`)}
+                    </h3>
                   </div>
                   <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border text-foreground transition-colors group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary">
                     <ArrowUpRight className="h-4 w-4" />
                   </span>
                 </div>
-                <p className="mt-3 text-muted-foreground leading-relaxed">{product.tagline}</p>
+                <p className="mt-3 text-muted-foreground leading-relaxed">
+                  {t(`solutions.products.${product.slug}.tagline`)}
+                </p>
                 <p className="mt-4 text-sm text-muted-foreground">
-                  From{" "}
-                  <span className="font-medium text-foreground">${product.startingPrice}</span>/mo
+                  {t("solutions.priceLine", { price: product.startingPrice })}
                 </p>
               </div>
             </Link>

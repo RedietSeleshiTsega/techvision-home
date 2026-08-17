@@ -1,0 +1,302 @@
+{
+  "hero": {
+    "badge": "One platform for learning, operations, and people",
+    "titlePrefix": "Transform your organization with",
+    "titleHighlight": "smart digital solutions",
+    "subtitle": "LMS, Education ERP, ERP, and HR Management — one cloud platform to run your school, university, or business smarter. Built for scale, backed by local Ethiopian support.",
+    "ctaPrimary": "Request Demo",
+    "ctaSecondary": "Explore Solutions",
+    "checklist": ["No credit card required", "14-day free trial", "Local support"],
+    "dashboardAlt": "TechVision Education ERP dashboard showing admissions, fees, and exam analytics",
+    "hrDashboardAlt": "HR management dashboard preview",
+    "lmsDashboardAlt": "LMS dashboard preview",
+    "trustedByLabel": "Trusted by schools, universities, and businesses",
+    "trustedBy": ["Universities", "Schools", "NGOs", "Government", "Telecom", "Enterprises"]
+  },
+  "stats": {
+    "items": [
+      { "value": "500+", "label": "Organizations served" },
+      { "value": "1M+", "label": "Active learners & users" },
+      { "value": "99.9%", "label": "Platform uptime" },
+      { "value": "24/7", "label": "Local support" }
+    ]
+  },
+  "solutions": {
+    "eyebrow": "Solutions",
+    "heading": "One platform, four powerful products",
+    "subheading": "Buy each product individually or bundle them into a suite. Everything is cloud-based, secure, and built to work together.",
+    "priceLine": "From ${{price}}/mo",
+    "products": {
+      "lms": { "name": "Learning Management System", "short": "LMS", "tagline": "Deliver world-class digital learning" },
+      "education-erp": { "name": "Education ERP", "short": "Education ERP", "tagline": "Run your entire institution from one place" },
+      "erp": { "name": "ERP System", "short": "ERP", "tagline": "One system to run your whole business" },
+      "hr": { "name": "HR Management System", "short": "HR Management", "tagline": "Empower your people operations" }
+    }
+  },
+  "why": {
+    "eyebrow": "Why TechVision",
+    "heading": "Built to be reliable, secure, and scalable",
+    "items": {
+      "cloudBased": { "title": "Cloud-Based", "description": "Access everything securely from anywhere, on any device, with zero infrastructure to manage." },
+      "secure": { "title": "Secure", "description": "Bank-grade encryption, role-based access, and regular audits keep your data protected." },
+      "scalable": { "title": "Scalable", "description": "From a single classroom to a national enterprise, TechVision grows with you." },
+      "mobileFriendly": { "title": "Mobile Friendly", "description": "Fully responsive apps so your team and learners stay productive on the go." },
+      "easyIntegration": { "title": "Easy Integration", "description": "Connect with the tools you already use through open APIs and ready integrations." },
+      "localSupport": { "title": "Local Ethiopian Support", "description": "Dedicated onboarding and support from a team that understands your context." }
+    }
+  },
+  "industries": {
+    "eyebrow": "Industries",
+    "heading": "Made for the way you work",
+    "viewAll": "View all industries",
+    "yourSector": "Your sector?",
+    "contactAboutIndustry": "Contact us about your industry",
+    "items": {
+      "schools": { "name": "Schools", "description": "Digitize K–12 administration and classroom learning." },
+      "universities": { "name": "Universities", "description": "Manage faculties, campuses, and research at scale." },
+      "trainingCenters": { "name": "Training Centers", "description": "Run cohorts, certifications, and paid courses." },
+      "ngos": { "name": "NGOs", "description": "Track programs, beneficiaries, and impact reporting." },
+      "government": { "name": "Government", "description": "Secure, compliant systems for public institutions." },
+      "telecom": { "name": "Telecom", "description": "Manage workforce and operations across regions." },
+      "businesses": { "name": "Businesses", "description": "Unify finance, people, and operations in one place." }
+    }
+  },
+  "nav": {
+  "links": {
+    "home": "Home",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "industries": "Industries",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "signIn": "Sign in",
+  "requestDemo": "Request Demo",
+  "toggleMenu": "Toggle menu"
+},
+"pricing": {
+  "eyebrow": "Pricing",
+  "heading": "Simple, transparent pricing",
+  "subheading": "Buy a single product or save with a bundled suite. Every plan is cloud-based and includes local support.",
+  "monthly": "Monthly",
+  "annual": "Annual",
+  "toggleAnnual": "Toggle annual pricing",
+  "saveUpTo": "Save up to 20%",
+  "mostPopular": "Most Popular",
+  "perMonth": "/mo",
+  "customPlan": "Need a custom plan?",
+  "talkToTeam": "Talk to our team",
+  "plans": {
+    "starter": {
+      "name": "Starter", "description": "For small teams getting started", "cta": "Start free trial",
+      "features": ["1 product module", "Up to 100 users", "Cloud hosting", "Email support", "Mobile access"]
+    },
+    "growth": {
+      "name": "Growth", "description": "For growing organizations", "cta": "Start free trial",
+      "features": ["Up to 2 product modules", "Up to 250 users", "Advanced analytics", "Priority support", "API access", "Custom branding"]
+    },
+    "educationSuite": {
+      "name": "Education Suite", "description": "LMS + Education ERP bundle", "cta": "Talk to sales",
+      "features": ["LMS + Education ERP", "Unlimited students", "Parent–teacher portal", "Exam & fee management", "Dedicated onboarding", "Local Ethiopian support"]
+    },
+    "enterpriseSuite": {
+      "name": "Enterprise Suite", "description": "All products, fully managed", "cta": "Talk to sales",
+      "features": ["All four products", "Unlimited users", "Custom integrations", "SLA & security audit", "24/7 dedicated support", "On-premise option"]
+    }
+  }
+},
+"cta": {
+  "heading": "Ready to transform your organization?",
+  "subheading": "Book a personalized demo and see how TechVision can streamline learning, operations, and people management — all in one place.",
+  "ctaPrimary": "Request Demo",
+  "ctaSecondary": "View Pricing"
+},
+"footer": {
+  "tagline": "Smart digital solutions for schools, universities, and businesses across Ethiopia and beyond.",
+  "columns": { "products": "Products", "company": "Company", "resources": "Resources" },
+  "company": { "about": "About", "industries": "Industries", "pricing": "Pricing", "contact": "Contact" },
+  "resources": { "requestDemo": "Request Demo", "documentation": "Documentation", "support": "Support", "privacy": "Privacy" },
+  "copyright": "© {{year}} TechVision. All rights reserved.",
+  "terms": "Terms of Service"
+},
+"solutionsPage": {
+  "eyebrow": "Solutions",
+  "title": "Powerful products for learning, operations, and people",
+  "description": "Each TechVision product is a complete, cloud-based system on its own — and even more powerful together. Buy what you need, scale when you're ready."
+},
+"pricingPage": {
+  "eyebrow": "Pricing",
+  "title": "Pricing that scales with your organization",
+  "description": "Buy individual products or save with a bundled suite. Every plan includes cloud hosting, mobile access, and local Ethiopian support."
+},
+"bundles": {
+  "eyebrow": "Bundles",
+  "heading": "Save more with bundled suites",
+  "subheading": "Combine products into a single suite and unlock deeper integration plus bundle pricing.",
+  "viewPricing": "View bundle pricing",
+  "items": {
+    "educationSuite": {
+      "name": "Education Suite", "description": "Everything an institution needs to teach and operate.", "save": "Save 25%"
+    },
+    "businessSuite": {
+      "name": "Business Suite", "description": "Run finance, operations, and people from one platform.", "save": "Save 25%"
+    },
+    "enterpriseSuite": {
+      "name": "Enterprise Suite", "description": "The complete TechVision platform, fully integrated.", "save": "Save 35%"
+    }
+  }
+},
+"industriesPage": {
+  "eyebrow": "Industries",
+  "title": "Solutions tailored to your sector",
+  "description": "From classrooms to national enterprises, TechVision adapts to the way your organization works — with the right products configured for your needs.",
+  "talkToUs": "Talk to us",
+  "details": {
+    "schools": "Digitize K–12 administration, attendance, fees, and classroom learning in one platform.",
+    "universities": "Manage multiple faculties, campuses, admissions, and research at national scale.",
+    "trainingCenters": "Run cohorts, sell courses, issue certificates, and track learner outcomes.",
+    "ngos": "Track programs, beneficiaries, staff, and impact reporting transparently.",
+    "government": "Secure, compliant systems for public institutions and workforce management.",
+    "telecom": "Coordinate distributed teams, operations, and finance across regions.",
+    "businesses": "Unify finance, inventory, sales, and people in a single connected system."
+  }
+},
+"aboutPage": {
+  "eyebrow": "About",
+  "title": "Technology built for our communities",
+  "description": "TechVision is on a mission to help organizations across Ethiopia and beyond run smarter with secure, scalable, cloud-based software — backed by people who understand the local context.",
+  "values": {
+    "mission": { "title": "Our Mission", "description": "To empower organizations with affordable, world-class digital tools that simplify operations and elevate outcomes." },
+    "vision": { "title": "Our Vision", "description": "A future where every school, institution, and business in the region runs on smart, connected technology." },
+    "values": { "title": "Our Values", "description": "Reliability, accessibility, and genuine local partnership guide everything we build and support." }
+  },
+  "milestones": {
+    "founded": { "value": "2018", "label": "Founded in Addis Ababa" },
+    "organizations": { "value": "500+", "label": "Organizations served" },
+    "products": { "value": "4", "label": "Flagship products" },
+    "users": { "value": "1M+", "label": "Users empowered" }
+  },
+  "story": {
+    "eyebrow": "Our story",
+    "heading": "From a local idea to a regional platform",
+    "p1": "TechVision started with a simple observation: organizations in our region were doing extraordinary work with tools that held them back. Spreadsheets, paper records, and disconnected systems made growth harder than it needed to be.",
+    "p2": "We set out to change that — building cloud-based software that's powerful enough for enterprises yet accessible to schools and small teams. Today, our LMS, Education ERP, ERP, and HR products help hundreds of organizations operate with confidence.",
+    "p3": "What sets us apart is partnership. Every customer gets onboarding and support from a team that speaks their language and understands their reality."
+  }
+},
+"contactPage": {
+  "eyebrow": "Contact",
+  "title": "Let's build something that works for your team",
+  "description": "Tell us about your organization and what you want to improve. Our team will get back to you within one business day.",
+  "talkDirectly": "Talk to us directly",
+  "talkDirectlyDesc": "Prefer a conversation? Reach out through any of the channels below and we'll connect you with the right specialist.",
+  "workingHours": "Working hours",
+  "workingHoursValue": "Monday – Friday: 2:30 AM – 11:30 AM (EAT)",
+  "workingHoursNote": "Local support team based in Addis Ababa.",
+  "details": {
+    "email": { "label": "Email", "value": "hello@techvision.et" },
+    "phone": { "label": "Phone", "value": "+251 11 234 5678" },
+    "office": { "label": "Office", "value": "Bole Road, Addis Ababa, Ethiopia" }
+  },
+  "received": {
+    "title": "Message received",
+    "description": "Thanks for reaching out. A member of the TechVision team will contact you within one business day.",
+    "sendAnother": "Send another message"
+  },
+  "form": {
+    "name": "Full name",
+    "namePlaceholder": "Abebe Kebede",
+    "email": "Work email",
+    "emailPlaceholder": "you@company.com",
+    "org": "Organization",
+    "orgPlaceholder": "Your school or company",
+    "interest": "Interested in",
+    "interestPlaceholder": "Select a product",
+    "interestBundle": "A bundle",
+    "interestOther": "Not sure yet",
+    "message": "How can we help?",
+    "messagePlaceholder": "Tell us about your team size, current tools, and what you'd like to improve.",
+    "submit": "Send message"
+  }
+},
+"notFound": {
+  "code": "404",
+  "title": "Page not found",
+  "description": "The page you're looking for doesn't exist or may have been moved.",
+  "goHome": "Back to home",
+  "contactUs": "Contact us"
+},
+"privacyPage": {
+  "eyebrow": "Privacy",
+  "title": "Privacy Policy",
+  "description": "How we collect, use, and protect your information.",
+  "lastUpdated": "Last updated: August 2026",
+  "sections": {
+    "s1": {
+      "heading": "Information we collect",
+      "body": "We collect information you provide directly, such as your name, email, organization, and any details you share through our contact form or demo requests."
+    },
+    "s2": {
+      "heading": "How we use your information",
+      "body": "We use your information to respond to inquiries, provide demos, deliver our products, and communicate updates relevant to your account."
+    },
+    "s3": {
+      "heading": "Data sharing",
+      "body": "We do not sell your personal data. We may share information with trusted service providers who help us operate our platform, under appropriate confidentiality agreements."
+    },
+    "s4": {
+      "heading": "Data security",
+      "body": "We use industry-standard security measures, including encryption and access controls, to protect your data from unauthorized access."
+    },
+    "s5": {
+      "heading": "Your rights",
+      "body": "You may request access to, correction of, or deletion of your personal data at any time by contacting our support team."
+    },
+    "s6": {
+      "heading": "Cookies",
+      "body": "We use essential cookies to operate our website and analytics tools to understand how our site is used, in order to improve our services."
+    },
+    "s7": {
+      "heading": "Contact us",
+      "body": "If you have questions about this privacy policy, please reach out through our contact page."
+    }
+  }
+},
+"termsPage": {
+  "eyebrow": "Terms",
+  "title": "Terms of Service",
+  "description": "The terms and conditions that apply when you use TechVision.",
+  "lastUpdated": "Last updated: August 2026",
+  "sections": {
+    "s1": {
+      "heading": "Acceptance of terms",
+      "body": "By accessing or using TechVision's products, you agree to be bound by these terms of service."
+    },
+    "s2": {
+      "heading": "Use of services",
+      "body": "You agree to use our products only for lawful purposes and in accordance with any applicable agreements between you and TechVision."
+    },
+    "s3": {
+      "heading": "Accounts and access",
+      "body": "You are responsible for maintaining the confidentiality of your account credentials and for all activity that occurs under your account."
+    },
+    "s4": {
+      "heading": "Payment and billing",
+      "body": "Subscription fees are billed according to the plan you select. Prices and terms may change with reasonable notice."
+    },
+    "s5": {
+      "heading": "Intellectual property",
+      "body": "TechVision retains all rights to its software, branding, and content. You retain ownership of the data you upload to our platform."
+    },
+    "s6": {
+      "heading": "Termination",
+      "body": "Either party may terminate service according to the terms of the applicable agreement. Upon termination, access to the platform will be discontinued."
+    },
+    "s7": {
+      "heading": "Limitation of liability",
+      "body": "TechVision is not liable for indirect or incidental damages arising from the use of our products, to the extent permitted by law."
+    }
+  }
+}
+}
+
