@@ -52,10 +52,10 @@ export function SiteFooter() {
             <p className="mt-5 text-muted-foreground max-w-sm leading-relaxed">
               {t("footer.tagline")}
             </p>
-            
+            <a
               href="mailto:info@techvision.edu.et"
               className="mt-6 inline-flex items-center gap-2 text-sm text-foreground hover:text-primary transition-colors"
-            <a>
+            >
               <Mail className="h-4 w-4" />
               info@techvision.edu.et
             </a>

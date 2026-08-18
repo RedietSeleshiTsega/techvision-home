@@ -115,7 +115,7 @@
   "tagline": "ለትምህርት ቤቶች፣ ዩኒቨርሲቲዎች እና ንግዶች በኢትዮጵያ እና ከዚያም ባሻገር ብልህ ዲጂታል መፍትሔዎች።",
   "columns": { "products": "ምርቶች", "company": "ድርጅት", "resources": "ግብዓቶች" },
   "company": { "about": "ስለ እኛ", "industries": "ዘርፎች", "pricing": "ዋጋ", "contact": "አግኙን" },
-  "resources": { "requestDemo": "ማሳያ ይጠይቁ", "documentation": "ሰነድ", "support": "ድጋፍ", "privacy": "ግላዊነት" },
+  "resources": { "requestDemo": "ማሳያ ይጠይቁ", "documentation": "ሰነድ", "support": "ድጋፍ", "privacy": "ግላዊነት", "terms": "የአገልግሎት ውሎች" },
   "copyright": "© {{year}} ቴክቪዥን። ሁሉም መብቶች የተጠበቁ ናቸው።",
   "terms": "የአገልግሎት ውሎች"
 },

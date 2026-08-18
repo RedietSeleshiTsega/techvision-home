@@ -115,7 +115,7 @@
   "tagline": "Smart digital solutions for schools, universities, and businesses across Ethiopia and beyond.",
   "columns": { "products": "Products", "company": "Company", "resources": "Resources" },
   "company": { "about": "About", "industries": "Industries", "pricing": "Pricing", "contact": "Contact" },
-  "resources": { "requestDemo": "Request Demo", "documentation": "Documentation", "support": "Support", "privacy": "Privacy" },
+  "resources": { "requestDemo": "Request Demo", "documentation": "Documentation", "support": "Support", "privacy": "Privacy", "terms": "Terms of Service" },
   "copyright": "© {{year}} TechVision. All rights reserved.",
   "terms": "Terms of Service"
 },
