@@ -72,7 +72,8 @@
   },
   "signIn": "Sign in",
   "requestDemo": "Request Demo",
-  "toggleMenu": "Toggle menu"
+  "toggleMenu": "Toggle menu",
+  "theme": { "light": "Light", "dark": "Dark", "system": "System" }
 },
 "pricing": {
   "eyebrow": "Pricing",

@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { navLinks } from "@/lib/site-data";
 import { LanguageSwitcher } from "@/components/site/language-switcher";
+import { ThemeToggle } from "@/components/site/theme-toggle";
 
 export function SiteNav() {
   const { t } = useTranslation();
@@ -70,6 +71,7 @@ export function SiteNav() {
 
           <div className="hidden lg:flex items-center gap-3">
             <LanguageSwitcher />
+            <ThemeToggle />
             <Button asChild variant="ghost" size="sm" className="rounded-full text-foreground/80 hover:text-foreground">
               <Link href="/contact">{t("nav.signIn")}</Link>
             </Button>
@@ -113,8 +115,9 @@ export function SiteNav() {
               </Link>
             ))}
           </div>
-          <div className="flex items-center justify-center pt-4">
+          <div className="flex items-center justify-center gap-3 pt-4">
             <LanguageSwitcher />
+            <ThemeToggle />
           </div>
           <div className="flex gap-4 pt-8 border-t border-border">
             <Button asChild variant="outline" className="flex-1 rounded-full h-14 text-base">

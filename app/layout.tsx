@@ -4,19 +4,20 @@ import { Instrument_Sans, Instrument_Serif, JetBrains_Mono } from 'next/font/goo
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 import { I18nProvider } from "@/components/i18n-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const instrumentSans = Instrument_Sans({ 
+const instrumentSans = Instrument_Sans({
   subsets: ["latin"],
   variable: '--font-instrument'
 });
 
-const instrumentSerif = Instrument_Serif({ 
+const instrumentSerif = Instrument_Serif({
   subsets: ["latin"],
   weight: "400",
   variable: '--font-instrument-serif'
 });
 
-const jetbrainsMono = JetBrains_Mono({ 
+const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
   variable: '--font-jetbrains'
 });
@@ -31,12 +32,14 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className="bg-background">
+    <html lang="en" className="bg-background" suppressHydrationWarning>
       <body className={`${instrumentSans.variable} ${instrumentSerif.variable} ${jetbrainsMono.variable} font-sans antialiased`}>
-        <I18nProvider>
-          {children}
-          <Analytics />
-        </I18nProvider>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <I18nProvider>
+            {children}
+            <Analytics />
+          </I18nProvider>
+        </ThemeProvider>
       </body>
     </html>
   )

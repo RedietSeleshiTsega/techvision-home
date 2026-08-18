@@ -72,7 +72,8 @@
   },
   "signIn": "ይግቡ",
   "requestDemo": "ማሳያ ይጠይቁ",
-  "toggleMenu": "ምናሌ ቀይር"
+  "toggleMenu": "ምናሌ ቀይር",
+  "theme": { "light": "ብሩህ", "dark": "ጨለማ", "system": "ሲስተም" }
 },
 "pricing": {
   "eyebrow": "ዋጋ",
